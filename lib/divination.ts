@@ -1,5 +1,5 @@
 // 五星及其五行
-const FIVE_STARS = [
+export const FIVE_STARS = [
   { name: "辰星", element: "水" },
   { name: "荧惑", element: "火" },
   { name: "岁德", element: "木" },
@@ -8,10 +8,10 @@ const FIVE_STARS = [
 ]
 
 // 十二地支
-const EARTHLY_BRANCHES = ["寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥", "子", "丑"]
+export const EARTHLY_BRANCHES = ["寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥", "子", "丑"]
 
 // 十二时辰五行
-const HOUR_ELEMENTS: Record<string, string> = {
+export const HOUR_ELEMENTS: Record<string, string> = {
   亥: "水",
   子: "水",
   寅: "木",
@@ -27,10 +27,10 @@ const HOUR_ELEMENTS: Record<string, string> = {
 }
 
 // 十二月将
-const MONTH_GENERALS = ["寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥", "子", "丑"]
+export const MONTH_GENERALS = ["寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥", "子", "丑"]
 
 // 五行相生相克关系
-const ELEMENT_RELATIONS: Record<string, { generates: string; controls: string }> = {
+export const ELEMENT_RELATIONS: Record<string, { generates: string; controls: string }> = {
   木: { generates: "火", controls: "土" },
   火: { generates: "土", controls: "金" },
   土: { generates: "金", controls: "水" },
@@ -39,7 +39,7 @@ const ELEMENT_RELATIONS: Record<string, { generates: string; controls: string }>
 }
 
 // 旺相休废表
-const PROSPERITY_TABLE: Record<string, Record<string, string>> = {
+export const PROSPERITY_TABLE: Record<string, Record<string, string>> = {
   春: { 木: "旺", 火: "相", 水: "休", 金: "囚", 土: "死" },
   夏: { 火: "旺", 土: "相", 木: "休", 水: "囚", 金: "死" },
   秋: { 金: "旺", 水: "相", 土: "休", 火: "囚", 木: "死" },
