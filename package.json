@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "build": "next build",
+    "build:html": "next build && next export",
     "dev": "next dev",
     "lint": "eslint .",
-    "start": "next start"
+    "start": "next start",
+    "serve": "npx serve out -p 3000"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
